@@ -228,6 +228,32 @@ body{
   margin: 0;
 }
 
+/* ===== CV: more space + description text ===== */
+
+.cv-section{
+  margin: 2.6rem 0;     /* more space between sections */
+}
+
+.cv-list{
+  gap: 1.2rem;          /* more space between entries */
+}
+
+.cv-item{
+  padding-bottom: 0.2rem;
+}
+
+.cv-place{
+  margin-bottom: 0.35rem;  /* space before description */
+}
+
+.cv-desc{
+  color: var(--text);
+  opacity: 0.95;
+  line-height: 1.65;
+  font-size: 0.97rem;
+  max-width: 760px;        /* avoids ultra-long lines */
+}
+
 @media (max-width: 720px){
   .cv-item{
     grid-template-columns: 1fr;
