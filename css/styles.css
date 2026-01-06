@@ -253,6 +253,25 @@ body{
   font-size: 0.97rem;
   max-width: 760px;        /* avoids ultra-long lines */
 }
+/* CV bullet descriptions */
+
+.cv-bullets{
+  margin: 0.35rem 0 0;
+  padding-left: 1.1rem;
+  list-style: disc;
+}
+
+.cv-bullets li{
+  margin: 0.3rem 0;
+  line-height: 1.6;
+}
+
+/* subtle academic blue bullets */
+.cv-bullets li::marker{
+  color: #3aa0ff;
+}
+
+
 
 @media (max-width: 720px){
   .cv-item{
