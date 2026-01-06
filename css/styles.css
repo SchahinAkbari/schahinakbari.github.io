@@ -167,6 +167,77 @@ body{
   box-shadow: 0 10px 30px rgba(0,0,0,0.35);
 }
 
+/* ===== CV layout (2-column rows like the screenshot) ===== */
+.cv .page-title{
+  margin-bottom: 0.75rem;
+}
+
+.cv-section{
+  margin: 2rem 0;
+}
+
+.cv-heading{
+  font-size: 1.7rem;
+  margin: 0 0 1rem 0;
+  letter-spacing: 0.2px;
+}
+
+.cv-list{
+  display: grid;
+  gap: 0.9rem;
+}
+
+.cv-item{
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 1.2rem;
+  align-items: start;
+}
+
+.cv-date{
+  color: var(--text);
+  opacity: 0.95;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.cv-body{
+  color: var(--text);
+}
+
+.cv-role{
+  font-weight: 600;
+  margin-bottom: 0.15rem;
+}
+
+.cv-place{
+  color: var(--muted);
+}
+
+.cv-link{
+  color: #27c1d9; /* teal-ish like in screenshot */
+  text-decoration: none;
+}
+
+.cv-link:hover{
+  text-decoration: underline;
+}
+
+.cv-note{
+  color: var(--muted);
+  margin: 0;
+}
+
+@media (max-width: 720px){
+  .cv-item{
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+  }
+  .cv-date{
+    opacity: 0.9;
+  }
+}
+
 
 /* Responsive */
 @media (max-width: 860px){
