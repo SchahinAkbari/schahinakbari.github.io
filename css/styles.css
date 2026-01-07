@@ -273,6 +273,102 @@ body{
 }
 
 
+/* ===== Helical Turbulence Orbit ===== */
+.research-orbit{
+  position: relative;
+  width: min(520px, 100%);
+  aspect-ratio: 1 / 1;
+  margin: 1.2rem auto 0;
+  display: grid;
+  place-items: center;
+}
+
+.orbit-ring{
+  position: absolute;
+  width: 88%;
+  height: 88%;
+  border-radius: 50%;
+  border: 2px solid rgba(233,236,241,0.18);
+  box-shadow: 0 0 0 1px rgba(32,39,58,0.4) inset;
+}
+
+/* Center card */
+.orbit-center{
+  position: relative;
+  z-index: 2;
+  width: 58%;
+  text-decoration: none;
+  color: var(--text);
+  background: rgba(17,21,35,0.65);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.30);
+  display: grid;
+}
+
+.orbit-center img{
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.orbit-center-label{
+  padding: 0.65rem 0.8rem;
+  font-weight: 650;
+  text-align: center;
+}
+
+.orbit-center:hover{
+  border-color: rgba(122,162,255,0.45);
+  background: rgba(17,21,35,0.78);
+}
+
+/* Orbit nodes */
+.orbit-node{
+  position: absolute;
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.7rem;
+  border-radius: 999px;
+  text-decoration: none;
+  color: var(--text);
+  background: rgba(17,21,35,0.75);
+  border: 1px solid var(--line);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.22);
+  white-space: nowrap;
+}
+
+.orbit-node:hover{
+  border-color: rgba(39,193,217,0.55);
+  transform: translateY(-1px);
+}
+
+.orbit-icon{
+  font-size: 1.05rem;
+}
+
+.orbit-text{
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* Positions: top / right / left */
+.orbit-top{ top: 2%; left: 50%; transform: translateX(-50%); }
+.orbit-right{ right: 2%; top: 50%; transform: translateY(-50%); }
+.orbit-left{ left: 2%; top: 50%; transform: translateY(-50%); }
+
+/* Mobile tweaks */
+@media (max-width: 520px){
+  .orbit-center{ width: 68%; }
+  .orbit-center img{ height: 180px; }
+  .orbit-node{ padding: 0.4rem 0.6rem; }
+}
+
 
 @media (max-width: 720px){
   .cv-item{
