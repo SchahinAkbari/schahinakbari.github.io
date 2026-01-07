@@ -301,7 +301,7 @@ body{
   color: var(--text);
 
   background: transparent;                    /* <- keine Füllung */
-  border: 1px solid rgba(233,236,241,0.22);   /* <- feine graue Linie */
+  border: transparent;             /* <- No border */
   border-radius: 18px;
   overflow: hidden;
 
@@ -345,16 +345,22 @@ body{
   border-radius: 999px;
   text-decoration: none;
   color: var(--text);
+
   background: rgba(17,21,35,0.75);
-  border: 1px solid var(--line);
+  border: 1px solid var(--line);               /* bleibt konstant */
   box-shadow: 0 10px 22px rgba(0,0,0,0.22);
   white-space: nowrap;
+
+  transition: box-shadow 140ms ease, border-color 140ms ease, background 140ms ease;
+  will-change: box-shadow;
 }
 
 .orbit-node:hover{
   border-color: rgba(39,193,217,0.55);
-  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.22), 0 0 0 3px rgba(39,193,217,0.12);
+  /* kein transform -> kein Springen */
 }
+
 
 .orbit-icon{
   font-size: 1.05rem;
