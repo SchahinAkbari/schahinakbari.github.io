@@ -309,10 +309,13 @@ body{
 
 .orbit-center img{
   width: 100%;
-  height: 220px;
-  object-fit: cover;
+  max-height: 220px;   /* Höhe begrenzen */
+  height: auto;        /* Seitenverhältnis beibehalten */
+  object-fit: contain; /* nichts abschneiden */
   display: block;
+  background: rgba(0,0,0,0.08); /* optional, falls Bild kleiner ist */
 }
+
 
 .orbit-center-label{
   padding: 0.65rem 0.8rem;
