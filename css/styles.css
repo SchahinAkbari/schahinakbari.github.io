@@ -299,31 +299,28 @@ body{
   width: 58%;
   text-decoration: none;
   color: var(--text);
-  background: rgba(17,21,35,0.65);
-  border: 1px solid var(--line);
+
+  background: transparent;                    /* <- keine Füllung */
+  border: 1px solid rgba(233,236,241,0.22);   /* <- feine graue Linie */
   border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.30);
-  display: grid;
-}
 
-
-.orbit-figure{
-  height: 220px;      /* Höhe ist führend */
-  width: auto;        /* Breite skaliert proportional */
-  max-width: 100%;
-  display: block;
-  background: transparent;
+  box-shadow: none;                           /* optional: clean */
+  display: flex;                              /* <- wichtig */
+  flex-direction: column;
+  align-items: center;                        /* <- horizontal zentriert */
 }
 
 
 .orbit-center img{
-  height: 220px;      /* feste Höhe = Referenz (wie in der Figure) */
-  width: auto;        /* Breite automatisch anpassen */
-  max-width: 100%;    /* nie über den Container hinaus */
+  height: 220px;
+  width: auto;
+  max-width: 100%;
   display: block;
+  margin: 0.6rem auto 0;   /* <- zentriert + etwas Abstand oben */
   background: transparent;
 }
+
 
 
 .orbit-center-label{
