@@ -307,13 +307,22 @@ body{
   display: grid;
 }
 
-.orbit-center img{
-  width: 100%;
-  max-height: 220px;   /* Höhe begrenzen */
-  height: auto;        /* Seitenverhältnis beibehalten */
-  object-fit: contain; /* nichts abschneiden */
+
+.orbit-figure{
+  height: 220px;      /* Höhe ist führend */
+  width: auto;        /* Breite skaliert proportional */
+  max-width: 100%;
   display: block;
-  background: rgba(0,0,0,0.08); /* optional, falls Bild kleiner ist */
+  background: transparent;
+}
+
+
+.orbit-center img{
+  height: 220px;      /* feste Höhe = Referenz (wie in der Figure) */
+  width: auto;        /* Breite automatisch anpassen */
+  max-width: 100%;    /* nie über den Container hinaus */
+  display: block;
+  background: transparent;
 }
 
 
