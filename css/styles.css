@@ -72,10 +72,11 @@ body{
 }
 
 .nav-research-title{
-  border: 1px solid transparent !important;
+  border: 1px none !important;
   background: transparent !important;
   color: var(--muted);
   padding: 0.35rem 0.6rem;   /* same as .nav-link */
+  cursor: default;
 }
 
 .nav-research-items{
@@ -84,16 +85,25 @@ body{
 }
 
 .nav-research-item{
-  border: 1px solid rgba(122,162,255,0.35); /* like Home outline */
-  background: transparent;                   /* no fill */
-  padding: 0.32rem 0.65rem; /* slightly slimmer */
+  border: none !important;
+  background: transparent !important;
+  color: var(--muted);
+  padding: 0.25rem 0.4rem;
+  font-weight: 500;
 }
+
 
 .nav-research-item:hover{
   border-color: rgba(122,162,255,0.55);
-  background: rgba(122,162,255,0.05);
+  color: var(--text);
+  background: transparent;
 }
 
+.nav-research-item.is-active{
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
 
 .hero{
   display:grid;
