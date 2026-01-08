@@ -373,34 +373,10 @@ body{
 }
 
 /* Positions: top / right / left */
-/*.orbit-top{ top: 2%; left: 50%; transform: translateX(-50%); }
+.orbit-top{ top: 2%; left: 50%; transform: translateX(-50%); }
 .orbit-right{ right: 2%; top: 50%; transform: translateY(-50%); }
 .orbit-left{ left: 2%; top: 50%; transform: translateY(-50%); }
-*/
 
-/* Place nodes evenly around the ring: 0°, 120°, 240° */
-.orbit-node{
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-/* radius from center (tune this) */
-:root{
-  --orbit-radius: 44%;
-}
-
-.orbit-top{
-  transform: translate(-50%, -50%) rotate(0deg) translateY(calc(-1 * var(--orbit-radius)));
-}
-
-.orbit-right{
-  transform: translate(-50%, -50%) rotate(120deg) translateY(calc(-1 * var(--orbit-radius)));
-}
-
-.orbit-left{
-  transform: translate(-50%, -50%) rotate(240deg) translateY(calc(-1 * var(--orbit-radius)));
-}
 
 
 /* Mobile tweaks */
