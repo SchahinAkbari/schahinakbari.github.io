@@ -56,6 +56,42 @@ body{
 .nav-link:hover{color:var(--text); border-color:var(--line); background:rgba(255,255,255,0.03)}
 .nav-link.is-active{color:var(--text); border-color:rgba(122,162,255,0.35); background:rgba(122,162,255,0.08)}
 
+
+/* ===== Navbar: centered Research with two outlined items ===== */
+
+.nav.nav-center{
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.nav-research{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.nav-research-title{
+  color: var(--muted);
+  padding: 0.35rem 0.6rem;   /* same as .nav-link */
+}
+
+.nav-research-items{
+  display: flex;
+  gap: 0.6rem;
+}
+
+.nav-research-item{
+  border: 1px solid rgba(122,162,255,0.35); /* like Home outline */
+  background: transparent;                   /* no fill */
+}
+
+.nav-research-item:hover{
+  border-color: rgba(122,162,255,0.65);
+  background: rgba(122,162,255,0.06);
+}
+
+
 .hero{
   display:grid;
   grid-template-columns: 1.4fr 0.9fr;
