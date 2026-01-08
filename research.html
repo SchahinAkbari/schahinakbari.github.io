@@ -11,42 +11,62 @@
     <div class="container nav-wrap">
       <a class="brand" href="index.html">Schahin Akbari</a>
       <nav class="nav">
-        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link is-active" href="index.html">Home</a>
         <a class="nav-link" href="cv.html">CV</a>
-        <a class="nav-link is-active" href="research.html">Research</a>
+
+        <!-- Research dropdown -->
+        <div class="nav-dropdown">
+          <button class="nav-link nav-dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+            Research
+          </button>
+          <div class="nav-dropdown-menu">
+            <a class="nav-dropdown-item" href="helical.html">Helical Turbulence</a>
+            <a class="nav-dropdown-item" href="droplets.html">Droplet Oscillations</a>
+          </div>
+        </div>
         <a class="nav-link" href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main class="container page">
-    <h1>Research</h1>
-    <p class="lead">Describe your topics and methods in a structured way.</p>
+<main class="container page">
+  <h1>Research</h1>
+  <p class="lead">
+    Two main research directions.
+  </p>
 
-    <section class="card">
-      <h2>Research interests</h2>
-      <ul class="list">
-        <li>Topic A — one line description</li>
-        <li>Topic B — one line description</li>
-        <li>Topic C — one line description</li>
-      </ul>
-    </section>
+  <section class="research-grid">
+    <!-- Helical Turbulence -->
+    <a class="research-card" href="helical.html">
+      <h2>Helical Turbulence</h2>
+      <p>
+        Transition from 2D to 3D turbulence, helical flows, and numerical investigations.
+      </p>
+      <div class="research-card-links">
+        <span class="pill">Details</span>
+        <span class="pill pill-ghost">Paper</span>
+        <span class="pill pill-ghost">Code</span>
+        <span class="pill pill-ghost">Video</span>
+      </div>
+    </a>
 
-    <section class="grid section">
-      <article class="card">
-        <h2>Theme 1</h2>
-        <p>Explain what you study, why it matters, and how you approach it.</p>
-      </article>
-      <article class="card">
-        <h2>Theme 2</h2>
-        <p>Add details: experiments, simulations, theory, field observations, etc.</p>
-      </article>
-      <article class="card">
-        <h2>Theme 3</h2>
-        <p>Keep it concise; link to publications or projects when ready.</p>
-      </article>
-    </section>
-  </main>
+    <!-- Droplet Oscillations -->
+    <a class="research-card" href="droplets.html">
+      <h2>Droplet Oscillations</h2>
+      <p>
+        Numerical analysis of droplet dynamics and modal coupling under arbitrary deformations.
+      </p>
+      <div class="research-card-links">
+        <span class="pill">Details</span>
+        <span class="pill pill-ghost">Paper</span>
+        <span class="pill pill-ghost">Code</span>
+      </div>
+    </a>
+  </section>
+</main>
+
+
+
 
   <footer class="site-footer">
     <div class="container footer-wrap">
