@@ -89,6 +89,13 @@ body{
   cursor: default;
 }
 
+.nav-research-title:hover{
+  color: var(--muted);
+  padding: 0.35rem 0.6rem;
+  border: 1px solid transparent;
+  background: transparent;
+  cursor: default;
+}
 
 .nav-research-items{
   display: flex;
@@ -104,12 +111,8 @@ body{
 }
 
 
-.nav-research-item:hover{
-  border-color:var(--line);
-  color: var(--text);
-  background: rgba(255,255,255,0.03);
+.nav-research-item:hover{border-color:var(--line);color: var(--text); background: rgba(255,255,255,0.03);
 }
-
 
 .nav-research-item.is-active{
   color: var(--text);
