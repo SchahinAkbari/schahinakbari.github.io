@@ -46,9 +46,7 @@ body{
 }
 
 .nav{display:flex; flex-wrap:wrap; gap:0.7rem}
-.nav{
-  align-items: center;
-}
+.nav{align-items: center;}
 
 .nav-link{
   color:var(--muted);
@@ -75,8 +73,6 @@ body{
   flex-direction: column;
   align-items: center;
   gap: 0.35rem;
-}
-.nav-research{
   align-self: center;
 }
 
@@ -103,11 +99,11 @@ body{
 }
 
 .nav-research-item{
-  border: none !important;
-  background: transparent !important;
-  color: var(--muted);
-  padding: 0.25rem 0.4rem;
-  font-weight: 500;
+  color:var(--muted);
+  text-decoration:none;
+  padding:0.35rem 0.6rem;
+  border-radius:10px;
+  border:1px solid transparent;
 }
 
 
