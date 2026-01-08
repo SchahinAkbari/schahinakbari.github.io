@@ -72,6 +72,8 @@ body{
 }
 
 .nav-research-title{
+  border: 1px solid transparent !important;
+  background: transparent !important;
   color: var(--muted);
   padding: 0.35rem 0.6rem;   /* same as .nav-link */
 }
@@ -84,11 +86,12 @@ body{
 .nav-research-item{
   border: 1px solid rgba(122,162,255,0.35); /* like Home outline */
   background: transparent;                   /* no fill */
+  padding: 0.32rem 0.65rem; /* slightly slimmer */
 }
 
 .nav-research-item:hover{
-  border-color: rgba(122,162,255,0.65);
-  background: rgba(122,162,255,0.06);
+  border-color: rgba(122,162,255,0.55);
+  background: rgba(122,162,255,0.05);
 }
 
 
