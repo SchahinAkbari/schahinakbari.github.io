@@ -351,9 +351,14 @@ body{
   width: 88%;
   height: 88%;
   border-radius: 50%;
-  border: 2px solid rgba(233,236,241,0.18);
-  box-shadow: 0 0 0 1px rgba(32,39,58,0.4) inset;
+
+  border: 2px solid rgba(233,236,241,0.28);  /* heller */
+
+  box-shadow:
+    0 0 0 1px rgba(233,236,241,0.12) inset, /* innere Kontur */
+    0 0 16px rgba(233,236,241,0.05);        /* sehr dezenter Glow */
 }
+
 
 /* Center card */
 .orbit-center{
