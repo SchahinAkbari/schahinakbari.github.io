@@ -375,16 +375,21 @@ body{
   text-decoration: none;
   color: var(--text);
 
-  background: transparent;                    /* <- keine Füllung */
-  border: transparent;             /* <- No border */
+  background: transparent;
+  border: 1px solid transparent;     /* <- WICHTIG */
   border-radius: 18px;
   overflow: hidden;
 
-  box-shadow: none;                           /* optional: clean */
-  display: flex;                              /* <- wichtig */
+  box-shadow: none;
+  display: flex;
   flex-direction: column;
-  align-items: center;                        /* <- horizontal zentriert */
+  align-items: center;
+
+  transition: box-shadow 140ms ease, border-color 140ms ease, background 140ms ease;
+  will-change: box-shadow;
+  cursor: pointer;
 }
+
 
 
 .orbit-center img{
@@ -405,9 +410,11 @@ body{
 }
 
 .orbit-center:hover{
-  border-color: rgba(122,162,255,0.45);
-  background: rgba(17,21,35,0.78);
+  border-color: rgba(39,193,217,0.55);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.22), 0 0 0 3px rgba(39,193,217,0.12);
+  background: transparent; /* keine dunkle Box */
 }
+
 
 /* Orbit nodes */
 .orbit-node{
