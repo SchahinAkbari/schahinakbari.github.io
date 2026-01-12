@@ -353,22 +353,16 @@ body{
   height: 88%;
   border-radius: 50%;
 
-  /* Ring */
-  border: 2px solid rgba(233,236,241,0.30);
+  /* klarer, heller Rand */
+  border: 2px solid rgba(233,236,241,0.35);
 
-  /* sichtbare, aber subtile Innenaufhellung */
-  background: radial-gradient(
-    circle at 50% 45%,
-    rgba(122,162,255,0.10) 0%,
-    rgba(122,162,255,0.06) 30%,
-    rgba(122,162,255,0.03) 52%,
-    rgba(0,0,0,0) 72%
-  );
+  /* EINHEITLICHE Hervorhebung im Inneren */
+  background-color: rgba(122,162,255,0.06);
 
-  /* mehr Tiefe (innen + ganz leichter outer glow) */
+  /* Tiefe, damit es sich vom Hintergrund absetzt */
   box-shadow:
-    0 0 0 1px rgba(233,236,241,0.10) inset,
-    0 0 22px rgba(122,162,255,0.08);
+    0 0 0 1px rgba(233,236,241,0.12) inset,
+    0 0 24px rgba(122,162,255,0.10);
 }
 
 
