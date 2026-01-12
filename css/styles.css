@@ -346,17 +346,28 @@ body{
   place-items: center;
 }
 
+
 .orbit-ring{
   position: absolute;
   width: 88%;
   height: 88%;
   border-radius: 50%;
 
-  border: 2px solid rgba(233,236,241,0.28);  /* heller */
+  /* etwas hellerer Rand */
+  border: 2px solid rgba(233,236,241,0.28);
+
+  /* ganz leichte innere Hervorhebung */
+  background: radial-gradient(
+    circle,
+    rgba(122,162,255,0.06) 0%,
+    rgba(122,162,255,0.035) 35%,
+    rgba(122,162,255,0.015) 55%,
+    rgba(0,0,0,0) 70%
+  );
 
   box-shadow:
-    0 0 0 1px rgba(233,236,241,0.12) inset, /* innere Kontur */
-    0 0 16px rgba(233,236,241,0.05);        /* sehr dezenter Glow */
+    0 0 0 1px rgba(32,39,58,0.45) inset,
+    0 0 18px rgba(122,162,255,0.08);
 }
 
 
